@@ -11,9 +11,9 @@ func _on_timer_timeout() -> void:
 	car.connect("body_entered", go_to_title)
 	
 func go_to_title(_body):
-	get_tree().call_deferred("change_scene_to_file","res://crash.tscn")
+	get_tree().call_deferred("change_scene_to_file","res://scenes/crash.tscn")
 	
 
 
 func _on_finish_body_entered(_body: Node2D) -> void:
-	get_tree().call_deferred("change_scene_to_file","res://end.tscn")
+	get_tree().call_deferred("change_scene_to_file","res://scenes/end.tscn")
