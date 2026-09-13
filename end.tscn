@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://du454rf2ljgco"]
+
+[ext_resource type="Texture2D" uid="uid://bai6kg4neh784" path="res://graphics/objects/05_quit_button.png" id="1_egc6y"]
+[ext_resource type="Script" uid="uid://b4molpfc5rweq" path="res://end.gd" id="1_lt2ag"]
+[ext_resource type="Texture2D" uid="uid://cy0xnyw42bo2u" path="res://graphics/objects/03_crossed_menu_1280x720.png" id="2_lt2ag"]
+[ext_resource type="Texture2D" uid="uid://cc45yqa3v2cso" path="res://graphics/objects/07_play_again_button.png" id="3_75yvt"]
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_bcymh"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_i4q0k"]
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_oe1sl"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gxdv1"]
+
+[node name="end" type="Control" unique_id=796794677]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_lt2ag")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=250808598]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_lt2ag")
+
+[node name="playagain" type="Button" parent="." unique_id=886795316]
+layout_mode = 0
+offset_left = 445.0
+offset_top = 448.0
+offset_right = 833.0
+offset_bottom = 561.0
+theme_override_styles/normal = SubResource("StyleBoxLine_bcymh")
+theme_override_styles/hover = SubResource("StyleBoxTexture_i4q0k")
+icon = ExtResource("3_75yvt")
+
+[node name="quit" type="Button" parent="." unique_id=1909571457]
+layout_mode = 0
+offset_left = 465.0
+offset_top = 529.0
+offset_right = 823.0
+offset_bottom = 647.0
+theme_override_styles/normal = SubResource("StyleBoxLine_oe1sl")
+theme_override_styles/hover = SubResource("StyleBoxTexture_gxdv1")
+icon = ExtResource("1_egc6y")
+
+[connection signal="pressed" from="playagain" to="." method="_on_playagain_pressed"]
+[connection signal="pressed" from="quit" to="." method="_on_quit_pressed"]

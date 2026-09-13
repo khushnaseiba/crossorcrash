@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://cbjcsr3f4ia4q"]
+
+[ext_resource type="Texture2D" uid="uid://ch0bh8x685nvh" path="res://graphics/objects/02_crashed_menu_1280x720.png" id="1_00myh"]
+[ext_resource type="Script" uid="uid://c2ull64crm46p" path="res://crash.gd" id="1_5kj0b"]
+[ext_resource type="Texture2D" uid="uid://c7rje6rd5y3jj" path="res://graphics/objects/06_try_again_button.png" id="2_0srsh"]
+[ext_resource type="Texture2D" uid="uid://bai6kg4neh784" path="res://graphics/objects/05_quit_button.png" id="3_5kj0b"]
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_bcymh"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5e3yu"]
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_5kj0b"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_75yvt"]
+
+[node name="crash" type="Control" unique_id=1064347182]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5kj0b")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1458468310]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_00myh")
+
+[node name="tryagain" type="Button" parent="." unique_id=1295749281]
+layout_mode = 0
+offset_left = 456.0
+offset_top = 450.0
+offset_right = 826.0
+offset_bottom = 555.0
+theme_override_styles/normal = SubResource("StyleBoxLine_bcymh")
+theme_override_styles/hover = SubResource("StyleBoxTexture_5e3yu")
+icon = ExtResource("2_0srsh")
+
+[node name="quit" type="Button" parent="." unique_id=89595948]
+layout_mode = 0
+offset_left = 464.0
+offset_top = 558.0
+offset_right = 835.0
+offset_bottom = 669.0
+theme_override_styles/normal = SubResource("StyleBoxLine_5kj0b")
+theme_override_styles/hover = SubResource("StyleBoxTexture_75yvt")
+icon = ExtResource("3_5kj0b")
+
+[connection signal="pressed" from="tryagain" to="." method="_on_tryagain_pressed"]
+[connection signal="pressed" from="quit" to="." method="_on_quit_pressed"]

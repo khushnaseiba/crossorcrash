@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://ddw8eu16j846s"]
+
+[ext_resource type="Script" uid="uid://diae7ykr3dla2" path="res://control.gd" id="1_qtu10"]
+[ext_resource type="Texture2D" uid="uid://cb0gqt2v3hpo4" path="res://graphics/objects/04_start_button.png" id="2_ee4bf"]
+[ext_resource type="Texture2D" uid="uid://dc6llq858x73h" path="res://graphics/objects/01_start_menu_1280x720.png" id="3_kbped"]
+[ext_resource type="Texture2D" uid="uid://bai6kg4neh784" path="res://graphics/objects/05_quit_button.png" id="4_ee4bf"]
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_kbped"]
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_50v30"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ee4bf"]
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_ee4bf"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kbped"]
+
+[node name="Control" type="Control" unique_id=712643139]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qtu10")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=130968227]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = 2.0
+offset_right = 1.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_kbped")
+
+[node name="start" type="Button" parent="." unique_id=2011202198]
+layout_mode = 0
+offset_left = 464.0
+offset_top = 423.0
+offset_right = 814.0
+offset_bottom = 540.0
+theme_override_styles/normal = SubResource("StyleBoxLine_kbped")
+theme_override_styles/pressed = SubResource("StyleBoxLine_50v30")
+theme_override_styles/hover = SubResource("StyleBoxTexture_ee4bf")
+icon = ExtResource("2_ee4bf")
+
+[node name="quit" type="Button" parent="." unique_id=1966049330]
+layout_mode = 0
+offset_left = 466.0
+offset_top = 547.0
+offset_right = 824.0
+offset_bottom = 665.0
+theme_override_styles/normal = SubResource("StyleBoxLine_ee4bf")
+theme_override_styles/hover = SubResource("StyleBoxTexture_kbped")
+icon = ExtResource("4_ee4bf")
+
+[connection signal="pressed" from="start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="quit" to="." method="_on_quit_pressed"]
