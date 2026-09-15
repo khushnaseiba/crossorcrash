@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dc6llq858x73h"
-path="res://.godot/imported/01_start_menu_1280x720.png-029820e5bf1d22e0e473502ebabc559e.ctex"
+uid="uid://bs15x1pmmpmoo"
+path="res://.godot/imported/Firefly_RemoveBackground.png-08c86cb662988903e89c3849122fd294.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/objects/01_start_menu_1280x720.png"
-dest_files=["res://.godot/imported/01_start_menu_1280x720.png-029820e5bf1d22e0e473502ebabc559e.ctex"]
+source_file="res://graphics/objects/Firefly_RemoveBackground.png"
+dest_files=["res://.godot/imported/Firefly_RemoveBackground.png-08c86cb662988903e89c3849122fd294.ctex"]
 
 [params]
 

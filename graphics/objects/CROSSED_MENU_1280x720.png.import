@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cy0xnyw42bo2u"
-path="res://.godot/imported/03_crossed_menu_1280x720.png-bcd8f6dabb2c7c7a625610d8d4d2600f.ctex"
+uid="uid://dd5v5lmo7uf4l"
+path="res://.godot/imported/CROSSED_MENU_1280x720.png-cb982547ed910793297add7ced757c9a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/objects/03_crossed_menu_1280x720.png"
-dest_files=["res://.godot/imported/03_crossed_menu_1280x720.png-bcd8f6dabb2c7c7a625610d8d4d2600f.ctex"]
+source_file="res://graphics/objects/CROSSED_MENU_1280x720.png"
+dest_files=["res://.godot/imported/CROSSED_MENU_1280x720.png-cb982547ed910793297add7ced757c9a.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ch0bh8x685nvh"
-path="res://.godot/imported/02_crashed_menu_1280x720.png-3188f5190b8df0b496e85aa7946d11a2.ctex"
+uid="uid://cyyhuxukqns3u"
+path="res://.godot/imported/CRASHED_MENU_1280x720.png-5a800c03aaac15c99511754241af0183.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/objects/02_crashed_menu_1280x720.png"
-dest_files=["res://.godot/imported/02_crashed_menu_1280x720.png-3188f5190b8df0b496e85aa7946d11a2.ctex"]
+source_file="res://graphics/objects/CRASHED_MENU_1280x720.png"
+dest_files=["res://.godot/imported/CRASHED_MENU_1280x720.png-5a800c03aaac15c99511754241af0183.ctex"]
 
 [params]
 
