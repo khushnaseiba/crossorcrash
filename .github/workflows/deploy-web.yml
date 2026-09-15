@@ -1,0 +1,54 @@
+name: Build and Deploy Web
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Godot
+        uses: chickensoft-games/setup-godot@v2
+        with:
+          version: 4.7.2
+
+      - name: Install Web export templates
+        run: |
+          mkdir -p ~/.local/share/godot/export_templates/4.7.2.stable
+
+          wget -q \
+            https://github.com/godotengine/godot/releases/download/4.7.2-stable/Godot_v4.7.2-stable_export_templates.tpz \
+            -O /tmp/templates.tpz
+
+          unzip -q /tmp/templates.tpz -d /tmp/godot-templates
+
+          cp -r \
+            /tmp/godot-templates/templates/* \
+            ~/.local/share/godot/export_templates/4.7.2.stable/
+
+      - name: Export Web
+        run: |
+          mkdir -p build/web
+
+          godot \
+            --headless \
+            --path . \
+            --export-release "Web" \
+            build/web/index.html
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build/web
+          publish_branch: gh-pages
