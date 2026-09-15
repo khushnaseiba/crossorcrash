@@ -2,14 +2,22 @@
 
 [ext_resource type="Texture2D" uid="uid://bai6kg4neh784" path="res://graphics/objects/05_quit_button.png" id="1_egc6y"]
 [ext_resource type="Script" uid="uid://b4molpfc5rweq" path="res://scenes/end.gd" id="1_lt2ag"]
-[ext_resource type="Texture2D" uid="uid://cy0xnyw42bo2u" path="res://graphics/objects/03_crossed_menu_1280x720.png" id="2_lt2ag"]
-[ext_resource type="Texture2D" uid="uid://cc45yqa3v2cso" path="res://graphics/objects/07_play_again_button.png" id="3_75yvt"]
+[ext_resource type="Texture2D" uid="uid://dd5v5lmo7uf4l" path="res://graphics/objects/CROSSED_MENU_1280x720.png" id="2_bvfni"]
+[ext_resource type="Texture2D" uid="uid://bs15x1pmmpmoo" path="res://graphics/objects/Firefly_RemoveBackground.png" id="3_bvfni"]
 
-[sub_resource type="StyleBoxLine" id="StyleBoxLine_bcymh"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nl5ow"]
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_i4q0k"]
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8hmjt"]
 
-[sub_resource type="StyleBoxLine" id="StyleBoxLine_oe1sl"]
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_s4tl2"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ee763"]
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bvfni"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gxdv1"]
 
@@ -19,28 +27,37 @@ anchors_preset = 0
 script = ExtResource("1_lt2ag")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=250808598]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-texture = ExtResource("2_lt2ag")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1.0
+offset_top = 1.0
+offset_right = 1279.0
+offset_bottom = 721.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_bvfni")
 
 [node name="playagain" type="Button" parent="." unique_id=886795316]
 layout_mode = 0
-offset_left = 445.0
-offset_top = 448.0
-offset_right = 833.0
-offset_bottom = 561.0
-theme_override_styles/normal = SubResource("StyleBoxLine_bcymh")
-theme_override_styles/hover = SubResource("StyleBoxTexture_i4q0k")
-icon = ExtResource("3_75yvt")
+offset_left = 454.0
+offset_top = 424.0
+offset_right = 804.0
+offset_bottom = 535.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_nl5ow")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_8hmjt")
+theme_override_styles/hover = SubResource("StyleBoxTexture_s4tl2")
+icon = ExtResource("3_bvfni")
 
 [node name="quit" type="Button" parent="." unique_id=1909571457]
 layout_mode = 0
 offset_left = 465.0
-offset_top = 529.0
-offset_right = 823.0
+offset_top = 537.0
+offset_right = 815.0
 offset_bottom = 647.0
-theme_override_styles/normal = SubResource("StyleBoxLine_oe1sl")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ee763")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_bvfni")
 theme_override_styles/hover = SubResource("StyleBoxTexture_gxdv1")
 icon = ExtResource("1_egc6y")
 

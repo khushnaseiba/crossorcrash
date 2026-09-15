@@ -31,7 +31,7 @@ size = Vector2(604.5, 14)
 size = Vector2(48, 1671)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xsd3y"]
-size = Vector2(384, 190)
+size = Vector2(384, 161)
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_nf4br"]
 
@@ -53,15 +53,102 @@ script = ExtResource("1_2klcf")
 [node name="Sprite2D3" type="Sprite2D" parent="." unique_id=1608302882]
 position = Vector2(1, -996)
 texture = ExtResource("1_4xfga")
+metadata/_edit_lock_ = true
 
 [node name="Sprite2D2" type="Sprite2D" parent="." unique_id=974394075]
-position = Vector2(1, -496)
+position = Vector2(0, -505)
 texture = ExtResource("1_4xfga")
+metadata/_edit_lock_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2040180176]
 texture = ExtResource("1_4xfga")
+metadata/_edit_lock_ = true
+
+[node name="carposition" type="Node2D" parent="." unique_id=35041107]
+
+[node name="Marker2D" type="Marker2D" parent="carposition" unique_id=367706834]
+position = Vector2(-202, 163)
+
+[node name="Marker2D2" type="Marker2D" parent="carposition" unique_id=1768364449]
+position = Vector2(-200, 142)
+
+[node name="Marker2D3" type="Marker2D" parent="carposition" unique_id=1429249835]
+position = Vector2(212, 118)
+
+[node name="Marker2D4" type="Marker2D" parent="carposition" unique_id=1180048]
+position = Vector2(211, 92)
+
+[node name="Marker2D5" type="Marker2D" parent="carposition" unique_id=1544336656]
+position = Vector2(210, 4)
+
+[node name="Marker2D6" type="Marker2D" parent="carposition" unique_id=1992991888]
+position = Vector2(-202, -26)
+
+[node name="Marker2D7" type="Marker2D" parent="carposition" unique_id=1462989180]
+position = Vector2(205, -53)
+
+[node name="Marker2D8" type="Marker2D" parent="carposition" unique_id=1591484447]
+position = Vector2(209, -93)
+
+[node name="Marker2D9" type="Marker2D" parent="carposition" unique_id=1628237642]
+position = Vector2(-201, -114)
+
+[node name="Marker2D10" type="Marker2D" parent="carposition" unique_id=568823648]
+position = Vector2(-199, -343)
+
+[node name="Marker2D11" type="Marker2D" parent="carposition" unique_id=1190279382]
+position = Vector2(195, -366)
+
+[node name="Marker2D12" type="Marker2D" parent="carposition" unique_id=2051863884]
+position = Vector2(-202, -392)
+
+[node name="Marker2D13" type="Marker2D" parent="carposition" unique_id=585983078]
+position = Vector2(202, -416)
+
+[node name="Marker2D14" type="Marker2D" parent="carposition" unique_id=603560376]
+position = Vector2(196, -500)
+
+[node name="Marker2D15" type="Marker2D" parent="carposition" unique_id=1758934905]
+position = Vector2(-204, -531)
+
+[node name="Marker2D16" type="Marker2D" parent="carposition" unique_id=388760792]
+position = Vector2(-204, -556)
+
+[node name="Marker2D17" type="Marker2D" parent="carposition" unique_id=103306120]
+position = Vector2(207, -598)
+
+[node name="Marker2D18" type="Marker2D" parent="carposition" unique_id=1456748762]
+position = Vector2(208, -622)
+
+[node name="Marker2D19" type="Marker2D" parent="carposition" unique_id=857063468]
+position = Vector2(195, -837)
+
+[node name="Marker2D20" type="Marker2D" parent="carposition" unique_id=813671790]
+position = Vector2(-194, -853)
+
+[node name="Marker2D21" type="Marker2D" parent="carposition" unique_id=1792559489]
+position = Vector2(-197, -879)
+
+[node name="Marker2D22" type="Marker2D" parent="carposition" unique_id=575158984]
+position = Vector2(203, -903)
+
+[node name="Marker2D23" type="Marker2D" parent="carposition" unique_id=175498954]
+position = Vector2(203, -991)
+
+[node name="Marker2D24" type="Marker2D" parent="carposition" unique_id=1053022816]
+position = Vector2(-195, -1021)
+
+[node name="Marker2D25" type="Marker2D" parent="carposition" unique_id=1148680323]
+position = Vector2(207, -1048)
+
+[node name="Marker2D26" type="Marker2D" parent="carposition" unique_id=550896858]
+position = Vector2(-201, -1088)
+
+[node name="Marker2D27" type="Marker2D" parent="carposition" unique_id=2010575460]
+position = Vector2(-193, -1113)
 
 [node name="border" type="Node2D" parent="." unique_id=82398185]
+metadata/_edit_lock_ = true
 
 [node name="StaticBody2D" type="StaticBody2D" parent="border" unique_id=339150646]
 collision_layer = 8
@@ -86,21 +173,23 @@ collision_mask = 0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="border/StaticBody2D3" unique_id=119234937]
 position = Vector2(216, -492)
 shape = SubResource("RectangleShape2D_5e3yu")
+metadata/_edit_lock_ = true
 
 [node name="StaticBody2D4" type="StaticBody2D" parent="border" unique_id=1701647264]
 collision_layer = 8
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="border/StaticBody2D4" unique_id=1160559342]
-position = Vector2(-216, -481)
+position = Vector2(-216, -489)
 shape = SubResource("RectangleShape2D_5e3yu")
+metadata/_edit_lock_ = true
 
 [node name="finish" type="Area2D" parent="border" unique_id=1726655223]
 collision_layer = 0
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="border/finish" unique_id=1427357653]
-position = Vector2(0, -1220)
+position = Vector2(0, -1234.5)
 shape = SubResource("RectangleShape2D_xsd3y")
 
 [node name="RedCar" type="Sprite2D" parent="border/finish" unique_id=128176419]
@@ -118,7 +207,7 @@ texture = ExtResource("6_30iet")
 [node name="timer" type="Node" parent="." unique_id=371752766]
 
 [node name="Timer" type="Timer" parent="timer" unique_id=775314411]
-wait_time = 0.05
+wait_time = 0.1
 autostart = true
 
 [node name="object" type="Node2D" parent="." unique_id=1144064736]
@@ -126,97 +215,10 @@ y_sort_enabled = true
 
 [node name="car" parent="object" unique_id=1982654714 instance=ExtResource("4_0cso3")]
 position = Vector2(56, -9)
+collision_mask = 6
 
 [node name="player" parent="object" unique_id=319234377 instance=ExtResource("2_paxxb")]
 position = Vector2(27, 26)
-
-[node name="carposition" type="Node2D" parent="." unique_id=2042515697]
-y_sort_enabled = true
-position = Vector2(-188, -3)
-
-[node name="Marker2D2" type="Marker2D" parent="carposition" unique_id=820639027]
-position = Vector2(-200, -49)
-
-[node name="Marker2D3" type="Marker2D" parent="carposition" unique_id=570721015]
-position = Vector2(-200, 8)
-
-[node name="Marker2D5" type="Marker2D" parent="carposition" unique_id=776316657]
-position = Vector2(392, -24)
-
-[node name="Marker2D8" type="Marker2D" parent="carposition" unique_id=280508010]
-position = Vector2(389, 91)
-
-[node name="Marker2D9" type="Marker2D" parent="carposition" unique_id=2035920847]
-position = Vector2(388, 116)
-
-[node name="Marker2D10" type="Marker2D" parent="carposition" unique_id=1587865823]
-position = Vector2(-200, 145)
-
-[node name="Marker2D11" type="Marker2D" parent="carposition" unique_id=2136628982]
-position = Vector2(-200, 165)
-
-[node name="Marker2D12" type="Marker2D" parent="carposition" unique_id=1138991042]
-position = Vector2(403, -329)
-
-[node name="Marker2D13" type="Marker2D" parent="carposition" unique_id=1911571846]
-position = Vector2(404, -380)
-
-[node name="Marker2D14" type="Marker2D" parent="carposition" unique_id=2126542767]
-position = Vector2(-206, -340)
-
-[node name="Marker2D15" type="Marker2D" parent="carposition" unique_id=1006486229]
-position = Vector2(-210, -405)
-
-[node name="Marker2D16" type="Marker2D" parent="carposition" unique_id=1665314450]
-position = Vector2(-206, -495)
-
-[node name="Marker2D17" type="Marker2D" parent="carposition" unique_id=1939752247]
-position = Vector2(-201, -546)
-
-[node name="Marker2D18" type="Marker2D" parent="carposition" unique_id=576268011]
-position = Vector2(396, -608)
-
-[node name="Marker2D28" type="Marker2D" parent="carposition" unique_id=1110564227]
-position = Vector2(394, -585)
-
-[node name="Marker2D29" type="Marker2D" parent="carposition" unique_id=419267027]
-position = Vector2(398, -509)
-
-[node name="Marker2D19" type="Marker2D" parent="carposition" unique_id=1956910174]
-position = Vector2(-206, -828)
-
-[node name="Marker2D20" type="Marker2D" parent="carposition" unique_id=905937670]
-position = Vector2(-206, -849)
-
-[node name="Marker2D21" type="Marker2D" parent="carposition" unique_id=1279240072]
-position = Vector2(407, -880)
-
-[node name="Marker2D22" type="Marker2D" parent="carposition" unique_id=1288307986]
-position = Vector2(406, -905)
-
-[node name="Marker2D23" type="Marker2D" parent="carposition" unique_id=755899989]
-position = Vector2(-206, -986)
-
-[node name="Marker2D24" type="Marker2D" parent="carposition" unique_id=1442221980]
-position = Vector2(400, -1021)
-
-[node name="Marker2D25" type="Marker2D" parent="carposition" unique_id=1008205033]
-position = Vector2(-206, -1045)
-
-[node name="Marker2D26" type="Marker2D" parent="carposition" unique_id=531535569]
-position = Vector2(397, -1087)
-
-[node name="Marker2D27" type="Marker2D" parent="carposition" unique_id=726898126]
-position = Vector2(396, -1112)
-
-[node name="Marker2D4" type="Marker2D" parent="carposition" unique_id=836547233]
-position = Vector2(-200, -112)
-
-[node name="Marker2D6" type="Marker2D" parent="carposition" unique_id=423323784]
-position = Vector2(400, -91)
-
-[node name="Marker2D7" type="Marker2D" parent="carposition" unique_id=1417009657]
-position = Vector2(391, -90)
 
 [node name="Objects" type="Node2D" parent="." unique_id=1456266371]
 
