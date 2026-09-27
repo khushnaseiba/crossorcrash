@@ -23,6 +23,7 @@
 [ext_resource type="Texture2D" uid="uid://c5iy3tuxd0vaw" path="res://graphics/objects/barrier.png" id="21_1qn5a"]
 [ext_resource type="Texture2D" uid="uid://cfe22lwgaf1k2" path="res://graphics/objects/traffic.png" id="22_leq5k"]
 [ext_resource type="Texture2D" uid="uid://oqgtp468wc6x" path="res://graphics/objects/sign.png" id="23_qcc5i"]
+[ext_resource type="AudioStream" uid="uid://co4qkx011rpr4" path="res://graphics/objects/cyberwave-orchestra-puzzle-game-loop-bright-casual-video-game-music-249201.mp3" id="24_y2ir2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bb2ia"]
 size = Vector2(604.5, 14)
@@ -1096,9 +1097,12 @@ shape = SubResource("RectangleShape2D_uea2i")
 position = Vector2(239, 96)
 shape = SubResource("RectangleShape2D_uea2i")
 
-[node name="CollisionPolygon2D50" type="CollisionPolygon2D" parent="Objects" unique_id=193191894]
-position = Vector2(-120, -1172)
+[node name="CollisionPolygon2D50" type="CollisionPolygon2D" parent="Objects/collisions" unique_id=193191894]
 polygon = PackedVector2Array(-44, 494, -48, 494, -48, 488, -64, 488, -64, 498, -67, 498, -67, 507, -55, 507, -55, 503, -44, 503)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=202613436]
+stream = ExtResource("24_y2ir2")
+autoplay = true
 
 [connection signal="body_entered" from="border/finish" to="." method="_on_finish_body_entered"]
 [connection signal="timeout" from="timer/Timer" to="." method="_on_timer_timeout"]
