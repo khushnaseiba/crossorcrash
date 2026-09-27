@@ -4,11 +4,11 @@ Watch out for cars!
 
 ## Description
 
-Cross the road without getting hit by the cars.
+So its game where you have to cross the road without getting hit by any car . You can rest or look around . You just have to get on the other side and you would win.
 
 ### Screenshots
 
-![gameplay screenshot](./crossorcrsh.png)
+![gameplay screenshot](./crossorcrash.png)
 
 ### Controls
 
